@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Applied Jobs Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    h2 { color: #0073b1; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #0073b1; color: white; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+  </style>
+</head>
+<body>
+  <h2>Applied Jobs (Real-Time)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Location</th>
+        <th>Match %</th>
+        <th>Time Applied</th>
+      </tr>
+    </thead>
+    <tbody id="jobLog"></tbody>
+  </table>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="dashboard.js" type="module"></script>
+</body>
+</html>
